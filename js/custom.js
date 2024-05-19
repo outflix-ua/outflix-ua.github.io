@@ -11,12 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetElement = document.getElementById(targetId);
 
             if (targetElement) {
-                if(targetId === 'index') {
-                    window.scrollTo({top: 0, behavior: 'smooth'});
-                } else {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                    window.scrollBy(0, -30); // 30px arriba para que no quede la cabecera tapada por la navbar
-                }
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+                window.scrollBy(0, -30); // 30px arriba para que no quede la cabecera tapada por la navbar
+            } else if (targetId === 'index') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         });
     });
