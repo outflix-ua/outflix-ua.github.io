@@ -1,10 +1,231 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Home</title>
-</head>
-<body>
-    <h1>Home</h1>
-    <p>Welcome to the home page.</p>
-</body>
+<html lang="es" data-bs-theme="light">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+      <title>Outflix</title>
+      <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" integrity="sha384-HphS8cQyN+eYiJ5PMbzShG6qZdRtvHPVLPkYb8JwMkmNgaIxrFVDhQe3jIbq3EZ2" crossorigin="anonymous">
+      <link href="/css/custom.css" rel="stylesheet">
+   </head>
+   <body>
+      <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" role="navigation" data-bs-theme="dark">
+         <div class="container-xl">
+            <a class="navbar-brand d-flex me-auto" href="#">
+              <img src="/images/logo-light.svg" alt="Outflix" width="200" height="25">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="main-navbar">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link scroll-link" data-scroll-to="index" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link scroll-link" data-scroll-to="features" href="#">Características</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link scroll-link" data-scroll-to="screenshots" href="#">Capturas</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link scroll-link" data-scroll-to="testimonials" href="#">Testimonios</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link scroll-link" data-scroll-to="about" href="#">Quiénes somos</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link scroll-link" data-scroll-to="download" href="#">Descargar</a>
+                  </li>
+               </ul>
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link">Google Play</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link">App Store</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <header class="bg-light py-5">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-6 text-center text-md-start">
+                  <h1 class="display-4">Bienvenido a Outflix</h1>
+                  <p class="lead">¿No sabes como gestionar tus prendas? Visita tiendas de ropa, guarda y... ¡organiza con Outflix!</p>
+                  <a href="#download" class="btn btn-primary btn-lg">Descarga la App</a>
+               </div>
+               <div class="col-md-6 text-center">
+                  <img src="/images/app-header-image.jpg" alt="Vista previa de Outflix" class="img-fluid my-3" style="max-width: 100%;">
+               </div>
+            </div>
+         </div>
+      </header>
+      <section id="features" class="py-5">
+         <div class="container">
+            <h2 class="text-center">Características</h2>
+            <div class="row">
+               <div class="col-md-4 text-center">
+                  <img src="/images/outfits.png" alt="Organiza tu ropa" class="img-fluid mb-3">
+                  <h3>Organiza tu ropa</h3>
+                  <p>Categoriza y gestiona tu ropa fácilmente.</p>
+               </div>
+               <div class="col-md-4 text-center">
+                  <img src="/images/garments.png" alt="Crea conjuntos" class="img-fluid mb-3">
+                  <h3>Crea conjuntos</h3>
+                  <p>Combina prendas y crea outfits increíbles.</p>
+               </div>
+               <div class="col-md-4 text-center">
+                  <img src="/images/closets.png" alt="Visita otros armarios" class="img-fluid mb-3">
+                  <h3>Visita otros armarios</h3>
+                  <p>¿Sin ideas? ¡Visita otros perfiles e inspírate!</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="screenshots" class="bg-light py-5">
+         <div class="container">
+            <h2 class="text-center">Vista previa de Outflix</h2>
+            <div class="row">
+               <div class="col-md-4 text-center">
+                  <img src="/images/garments2.png" alt="Redefine la moda" class="img-fluid mb-3">
+                  <h3>Redefine la <b>moda</b></h3>
+                  <p>Crea conjuntos con la ropa que tienes almacenada</p>
+               </div>
+               <div class="col-md-4 text-center">
+                  <img src="/images/garments.png" alt="Consulta tu armario" class="img-fluid mb-3">
+                  <h3>¿Visitando <b>tiendas de ropa</b>?</h3>
+                  <p>Si te interesa alguna prenda pero no lo tienes del todo claro... ¡revisa tu armario desde cualquier sitio!</p>
+               </div>
+               <div class="col-md-4 text-center">
+                  <img src="/images/closets.png" alt="Comparte tus estilos" class="img-fluid mb-3">
+                  <h3><b>Comparte</b> tu estilo</h3>
+                  <p>¡Publica tus conjuntos con otros usuarios de Outflix o en otras redes sociales! 😜</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="testimonials" class="py-5">
+         <div class="container">
+            <h2 class="text-center">Opiniones</h2>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="text-center">
+                    <img src="/images/reviews/laura.jpeg" alt="Laura Hernández" width="175px" class="img-fluid rounded-circle mb-3">
+                  </div>
+                  <blockquote class="blockquote">
+                     <p class="mb-0">"Outflix ha transformado la forma en que organizo mi ropa. La uso diariamente. ¡Me encanta!"</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                     Opinión de <cite title="Source Title">Laura Hernández</cite>
+                  </figcaption>
+               </div>
+               <div class="col-md-4">
+                  <div class="text-center">
+                    <img src="/images/reviews/fernando.jpg" alt="Fernando Alonso" width="175px" class="img-fluid rounded-circle mb-3">
+                  </div>
+                  <blockquote class="blockquote">
+                     <p class="mb-0">"Crear outfits nunca fue tan fácil. Además, visitar otros perfiles me ayuda a inspirarme. Muy recomendable."</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                    Opinión de <cite title="Source Title">Fernando Alonso</cite>
+                  </figcaption>
+               </div>
+               <div class="col-md-4">
+                  <div class="text-center">
+                    <img src="/images/reviews/pedro.jpeg" alt="Pedro Gutierrez" width="175px" class="img-fluid rounded-circle mb-3">
+                  </div>
+                  <blockquote class="blockquote">
+                     <p class="mb-0">"Planificar mi look para cada día me ahorra mucho tiempo."</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                    Opinión de <cite title="Source Title">Pedro Gutierrez</cite>
+                  </figcaption>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="about" class="py-5 bg-secondary text-white">
+         <div class="container">
+            <h2 class="text-center">Quiénes somos</h2>
+            <p class="lead text-center">Outflix es una aplicación dedicada a revolucionar la manera en que gestionas tu ropa. Nuestro equipo está formado por expertos en moda y tecnología, comprometidos en ofrecerte una experiencia única para organizar y crear tus outfits diarios.</p>
+            <div class="row mb-5">
+               <div class="col-md-4 text-center">
+                  <div class="text-center">
+                    <img src="https://avatars.githubusercontent.com/u/98972246?v=4" alt="hallofblood" width="175px" class="img-fluid rounded-circle mb-3">
+                  </div>
+                  <h4>hallofblood</h4>
+                  <a href="https://github.com/hallofblood" class="badge bg-dark"><i class="mdi mdi-github me-1"></i>Visitar GitHub</a>
+               </div>
+               <div class="col-md-4 text-center">
+                <div class="text-center">
+                  <img src="https://avatars.githubusercontent.com/u/98742372?v=4" alt="Kebab II" width="175px" class="img-fluid rounded-circle mb-3">
+                </div>
+                <h4>Kebab II</h4>
+                <a href="https://github.com/kebb2-ua" class="badge bg-dark"><i class="mdi mdi-github me-1"></i>Visitar GitHub</a>
+               </div>
+               <div class="col-md-4 text-center">
+                <div class="text-center">
+                  <img src="https://avatars.githubusercontent.com/u/60710718?v=4&size=32" alt="Victoria" width="175px" class="img-fluid rounded-circle mb-3">
+                </div>
+                <h4>Victoria</h4>
+                <a href="https://github.com/VictoriaMorquio" class="badge bg-dark"><i class="mdi mdi-github me-1"></i>Visitar GitHub</a>
+               </div>
+            </div>
+            
+            <div class="row mb-5">
+              <div class="col-md-4 text-center">
+                <div class="text-center">
+                  <img src="https://avatars.githubusercontent.com/u/78725324?s=64&v=4" alt="jepl1" width="175px" class="img-fluid rounded-circle mb-3">
+                </div>
+                <h4>jepl1</h4>
+                <a href="https://github.com/jepl1-ua" class="badge bg-dark"><i class="mdi mdi-github me-1"></i>Visitar GitHub</a>
+              </div>
+              <div class="col-md-4 text-center">
+                <div class="text-center">
+                  <img src="https://avatars.githubusercontent.com/u/98946255?v=4" alt="aggg12" width="175px" class="img-fluid rounded-circle mb-3">
+                </div>
+                <h4>aggg12</h4>
+                <a href="https://github.com/aggg12-ua" class="badge bg-dark"><i class="mdi mdi-github me-1"></i>Visitar GitHub</a>
+              </div>
+              <div class="col-md-4 text-center">
+                <div class="text-center">
+                  <img src="https://avatars.githubusercontent.com/u/98736482?s=64&v=4" alt="Hatapro" width="175px" class="img-fluid rounded-circle mb-3">
+                </div>
+                <h4>Hatapro</h4>
+                <a href="https://github.com/hasa1-ua" class="badge bg-dark"><i class="mdi mdi-github me-1"></i>Visitar GitHub</a>
+              </div>
+           </div>
+           <div class="row">
+              <div class="col-md-4 text-center">
+              </div>
+              <div class="col-md-4 text-center">
+                <div class="text-center">
+                  <img src="https://avatars.githubusercontent.com/u/99075341?s=64&v=4" alt="jogo2" width="175px" class="img-fluid rounded-circle mb-3">
+                </div>
+                <h4>jogo2</h4>
+                <a href="https://github.com/jogo2-ua" class="badge bg-dark"><i class="mdi mdi-github me-1"></i>Visitar GitHub</a>
+              </div>
+           </div>
+         </div>
+      </section>
+      <section id="download" class="bg-primary text-white text-center py-5">
+         <div class="container">
+            <h2 class="display-4">Descarga Outflix</h2>
+            <p class="lead">Disponible en Google Play y App Store.</p>
+            <a href="#" class="btn btn-light btn-lg me-3">Google Play</a>
+            <a href="#" class="btn btn-light btn-lg">App Store</a>
+         </div>
+      </section>
+      <footer class="bg-dark text-white text-center py-2">
+         <div class="container">
+            &copy; 2024 Outflix. Todos los derechos reservados.
+         </div>
+      </footer>
+      <script src="/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="/js/custom.js"></script>
+   </body>
 </html>
